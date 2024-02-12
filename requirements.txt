@@ -59,6 +59,8 @@ idna==3.6
     #   anyio
     #   jsonschema
     #   requests
+imageio==2.34.0
+    # via scikit-image
 ipykernel==6.29.2
     # via
     #   jupyter
@@ -142,6 +144,8 @@ jupytext==1.16.1
     # via -r requirements.in
 kiwisolver==1.4.5
     # via matplotlib
+lazy-loader==0.3
+    # via scikit-image
 markdown-it-py==3.0.0
     # via
     #   jupytext
@@ -176,6 +180,8 @@ nbformat==5.9.2
     #   nbconvert
 nest-asyncio==1.6.0
     # via ipykernel
+networkx==3.2.1
+    # via scikit-image
 notebook==7.0.8
     # via jupyter
 notebook-shim==0.2.3
@@ -186,8 +192,12 @@ numpy==1.26.4
     # via
     #   -r requirements.in
     #   contourpy
+    #   imageio
     #   matplotlib
     #   pandas
+    #   scikit-image
+    #   scipy
+    #   tifffile
 overrides==7.7.0
     # via jupyter-server
 packaging==23.2
@@ -201,6 +211,7 @@ packaging==23.2
     #   nbconvert
     #   qtconsole
     #   qtpy
+    #   scikit-image
 pandas==2.2.0
     # via -r requirements.in
 pandocfilters==1.5.1
@@ -210,7 +221,10 @@ parso==0.8.3
 pexpect==4.9.0
     # via ipython
 pillow==10.2.0
-    # via matplotlib
+    # via
+    #   imageio
+    #   matplotlib
+    #   scikit-image
 platformdirs==4.2.0
     # via jupyter-core
 prometheus-client==0.19.0
@@ -281,6 +295,10 @@ rpds-py==0.17.1
     # via
     #   jsonschema
     #   referencing
+scikit-image==0.22.0
+    # via -r requirements.in
+scipy==1.12.0
+    # via scikit-image
 send2trash==1.8.2
     # via jupyter-server
 six==1.16.0
@@ -301,6 +319,8 @@ terminado==0.18.0
     # via
     #   jupyter-server
     #   jupyter-server-terminals
+tifffile==2024.1.30
+    # via scikit-image
 tinycss2==1.2.1
     # via nbconvert
 toml==0.10.2

@@ -3,5 +3,6 @@ jupytext
 matplotlib
 numpy
 pandas
+scikit-image
 tabulate
 
